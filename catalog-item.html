@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalog-item</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-navigator">
+            <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="114px" height="24px" alt="Логотип барбершопа Бородинский"></a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class="login-link">Вход</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Набор для путешествий "Baxter of California"</h1>
+        <ul class="breadcrumbs">
+            <li><a href="barbershop.html">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Средства для ухода </a></li>
+            <li class="breadcrumbs-current">Набор для путешествий "Baxter of California"</li>
+        </ul>
+        <section class="products-photo">
+            <h2 class="visually-hidden">Фото всех товаров</h2>
+            <p class="product-photo-full">
+                <img src="img/product-big.jpg" width="460" height="498" alt="Все товары вместе">
+            </p>
+            <ul class="product-photo-review">
+                <li><img src="img/product-small-1" width="140" height="149" alt="фото товара"></li>
+                <li><img src="img/product-small-2" width="140" height="149" alt="фото товара"></li>
+                <li><img src="img/product-small-3" width="140" height="149" alt="фото товара"></li>
+            </ul>
+        </section>
+        <section class="product-info">
+            <h2 class="visually-hidden">Информация о товаре</h2>
+            <p class="product-avaliability">Есть в наличии</p>
+            <p class="product-article">Артикул:dexter-ae</p>
+            <p class="product-text">travel kit- необходимый аксессуар во время любого путешествия.В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь, набор также может стать отличным подарком.</p>
+            <p class="product-price">
+                    <b>2900 ?</b>
+                    <a class="button" href="#">Купить</a>
+            </p>
+            <h3>В набор входят:</h3>
+            <ul>
+                <li>средство для умывания (50мл)</li>
+                <li>увлажняющий крем (50мл)</li>
+                <li>крем для бритья (50мл)</li>
+                <li>крем после бритья, шампунь (50мл)</li>
+                <li>удобная кожаная косметичка</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="footer-contacts">
+            Барбершоп "Бородинский"<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная. д. 19/8<br>
+            <a href="map.html">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <ul>
+                <li><a href="#" class="social-button">Vk</a></li>
+                <li><a href="#" class="social-button">Facebook</a></li>
+                <li><a href="#" class="social-button">Instagram</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Разработано:</b>
+            <a href="#" class="button">Николай Балынский</a>
+        </p>
+    </footer>
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form action="form.php" class="login-form" method="POST">
+            <p>
+                <input type="text" class="login-icon-user" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <input type="password" class="login-icon-password" name="password" placeholder="Пароль">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" class="visually-hidden">Запомните меня
+                <a href="#" class="restore">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <span class="modal-close">X</span>
+    </section>
+</body>
+
+</html>
