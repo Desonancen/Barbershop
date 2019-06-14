@@ -1,0 +1,14 @@
+body {
+    background: #000;
+    color:white;
+    font-weight:700;
+    font-family: sans-serif;
+    line-height: 24px;
+}
+
+h2 {
+    background:white;
+    font-size:30px;
+    color:#000000;
+    line-height: 42px;
+}
