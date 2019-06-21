@@ -15,6 +15,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip:rect(0 0 0 0);
+    width:1px;
+    height: 1px;
+    margin:-1px;
+}
+
 .inner-page {
     color:#000;
     background-color: #f9f6f3;
@@ -104,7 +112,7 @@ list-style: none;
     text-transform: none;
 }
 
-.gallery-content {
+.gallery-content .img{
     background-color:#ccc;
     border:7px solid #fff;
 }
@@ -122,7 +130,7 @@ list-style: none;
 
 .main-footer {
     color:#fff;
-
+    
     background-color:#212121;
     background-image:url(../img/footer-bg.png);
     background-position: 0 0;
@@ -295,18 +303,18 @@ text-decoration: underline;
     background-color: #fff;
 }
 
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
     color:#000;
 
     background-color: #fff;
-}
-
-.pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item a:active {
-    background-color: #663d15;
 }
 
 .product-info h3 {
@@ -337,4 +345,125 @@ text-decoration: underline;
 .product-article {
     color:#aeaeae;
     text-align: right;
+}
+
+/* Сеточные стили*/
+
+html,
+body {
+    min-width:1122px;
+    min-height: 1750px;
+}
+
+.container {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+}
+
+.main-header {
+    margin-bottom: 75px;
+}
+
+.main-navigator {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo {
+    order:2;
+    width:368px;
+    height: 153px;
+}
+
+.main-navigator-wrapper {
+    width:100%;
+    margin-bottom: 60px;
+    background-color: #000;
+}
+
+.main-navigator-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width:620px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-navigation {
+    width:140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.feature-item {
+    width:300px;
+}
+
+.features {
+    margin-bottom:80px;
+}
+
+.index-columns {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.news {
+    width:380px;
+}
+
+.gallery {
+    width:300px;
+}
+
+.contacts {
+    width:380px;
+}
+
+.appointment {
+    width:300px;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding: 60px 0;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width:320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-social {
+    width:145px;
+    margin: 0;
+}
+
+.footer-copyright {
+    margin: 0;
+    width:150px;
+    margin-left: auto;
 }

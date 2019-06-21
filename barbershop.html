@@ -15,7 +15,9 @@
     <header class="main-header">
         <nav class="main-navigator">
             <a class="main-header-logo" href="barbershop.html">
-                <img src="img/index-logo.png" width="368px" height="153px" alt="Логотип барбершопа Бородинский"></a>
+                <img src="img/index-logo.png" width="368" height="153" alt="Логотип барбершопа Бородинский"></a>
+                <div class="main-navigator-wrapper">
+                    <div class="container">
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="news.html">Новости</a></li>
@@ -27,11 +29,12 @@
                 <li>
                 <a class="login-link" href="login.html">Вход</a></li>
             </ul>
+        </div>
+    </div>
         </nav>
     </header>
     <main class="container">
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="feature-list">
@@ -70,8 +73,8 @@
             <figure class="gallery-content">
                 <a href="#"><img src="img/photogallery.png" width="286" height="164" alt="Interier"></a>
             </figure>
-            <button class="button-gallery-button gallery-button-back">Назад</button>
-            <button class="button-gallery-button gallery-button-next">Вперед</button>
+            <button class="button gallery-button ">Назад</button>
+            <button class="button gallery-button" >Вперед</button>
         </section>
     </div>
     <div class="index-columns">
@@ -96,7 +99,7 @@
             <form action="bad.php" class="appointment-form" method="POST">
                 <p class="appointment-item">
                     <label for="appointment-data">Дата</label> 
-                    <input id="appointment-data" type="text" name="date" vallue="" placeholder="08.10.2017"></p>
+                    <input id="appointment-data" type="text" name="date" value="" placeholder="08.10.2017"></p>
                 <p class="appointment-item">
                    <label for="appointment-time">Время</label> 
                     <input id="appointment-time" type="text" name="time" value="" placeholder="10:00"></p>
@@ -112,6 +115,7 @@
     </div>
     </main>
     <footer class="main-footer">
+        <div class="container">
         <p class="footer-contacts">
             Барбершоп "Бородинский"<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная. д. 19/8<br>
@@ -130,6 +134,7 @@
             <b>Разработано:</b>
             <a href="#" class="button">Николай Балынский</a>
         </p>
+    </div>
     </footer>
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
